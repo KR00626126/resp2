@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"diskName": {
+			"type": "String"
+		},
+		"location": {
+			"type": "String"
+		},
+		"sku": {
+			"type": "String"
+		},
+		"diskSizeGb": {
+			"type": "String"
+		},
+		"sourceResourceId": {
+			"type": "String"
+		},
+		"sourceUri": {
+			"type": "String"
+		},
+		"osType": {
+			"type": "String"
+		},
+		"createOption": {
+			"type": "String"
+		}
+	},
+	"resources": [{
+		"type": "Microsoft.Compute/disks",
+		"apiVersion": "2018-06-01",
+		"name": "[parameters('diskName')]",
+		"location": "[parameters('location')]",
+		"tags": {},
+		"sku": {
+			"name": "[parameters('sku')]"
+		},
+		"properties": {
+			"copy": {
+				"name": "[parameters('diskName')]",
+				"count": 4,
+				"creationData": {
+					"createOption": "[parameters('createOption')]"
+				},
+				"diskSizeGB": "[parameters('diskSizeGb')]",
+				"osType": "[parameters('osType')]"
+			}
+		}
+	}]
+}

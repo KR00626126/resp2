@@ -168,11 +168,6 @@
               "diskSizeGB": "[parameters('sizeOfEachDataDiskInGB')]",
               "lun": 2,
               "createOption": "Empty"
-            },
-            {
-              "diskSizeGB": "[parameters('sizeOfEachDataDiskInGB')]",
-              "lun": 3,
-              "createOption": "Empty"
             }
           ],
           "osDisk": {

@@ -3,37 +3,37 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "dnsLabelPrefix": {
-      "type": "Mydns",
+      "type": "string",
       "metadata": {
         "description": "Unique DNS Name for the Storage Account where the Virtual Machine's disks will be placed."
       }
     },
     "adminUsername": {
-      "type": "Kirtihrani",
+      "type": "string",
       "metadata": {
         "description": "Username for the Virtual Machine."
       }
     },
     "adminPassword": {
-      "type": "R@stogi123456",
+      "type": "securestring",
       "metadata": {
         "description": "Password for the Virtual Machine."
       }
     },
     "vmSize": {
-      "type": "Standard_DS2_v2",
+      "type": "string",
       "metadata": {
         "description": "Size of VM"
       }
     },
     "sizeOfEachDataDiskInGB": {
-      "type": "10",
+      "type": "string",
       "metadata": {
         "description": "Size of each data disk in GB"
       }
     },
     "location": {
-      "type": "canadaeast",
+      "type": "string",
       "defaultValue": "[resourceGroup().location]",
       "metadata": {
         "description": "Location for all resources."

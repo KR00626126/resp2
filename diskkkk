@@ -29,7 +29,7 @@
             "type": "Microsoft.Compute/disks",
             "apiVersion": "2018-06-01",
             "name": "[parameters('disks_disk1_name')]",
-            "location": "eastus",
+            "location": "canadaeast",
             "sku": {
                 "name": "StandardSSD_LRS",
                 "tier": "Standard"
@@ -47,7 +47,7 @@
             "type": "Microsoft.Compute/disks",
             "apiVersion": "2018-06-01",
             "name": "[parameters('disks_disk2_name')]",
-            "location": "eastus",
+            "location": "canadaeast",
             "sku": {
                 "name": "StandardSSD_LRS",
                 "tier": "Standard"
@@ -65,7 +65,7 @@
             "type": "Microsoft.Compute/disks",
             "apiVersion": "2018-06-01",
             "name": "[parameters('disks_disk3_name')]",
-            "location": "eastus",
+            "location": "canadaeast",
             "sku": {
                 "name": "StandardSSD_LRS",
                 "tier": "Standard"
@@ -83,7 +83,7 @@
             "type": "Microsoft.Compute/disks",
             "apiVersion": "2018-06-01",
             "name": "[parameters('disks_disk4_name')]",
-            "location": "eastus",
+            "location": "canadaeast",
             "sku": {
                 "name": "StandardSSD_LRS",
                 "tier": "Standard"
@@ -101,7 +101,7 @@
             "type": "Microsoft.Compute/disks",
             "apiVersion": "2018-06-01",
             "name": "[parameters('disks_disk5_name')]",
-            "location": "eastus",
+            "location": "canadaeast",
             "sku": {
                 "name": "StandardSSD_LRS",
                 "tier": "Standard"

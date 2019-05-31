@@ -17,7 +17,7 @@
             "type": "Microsoft.Compute/disks",
             "apiVersion": "2018-06-01",
             "name": "[parameters('disks_disk2_name')]",
-            "location": "southeastasia",
+            "location": "eastus",
             "sku": {
                 "name": "Standard_LRS",
                 "tier": "Standard"
